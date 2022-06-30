@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <!----main_container-->
+    <div class="main_container">
+        <!----righ_bar-->
+        <div class="right_bar">
+            <!----about-->
+            <div class="about_me_section">
+                <h2 class="about_my_profession"> Python engineer, machine learning and deep learning</h2>
+                <!-- full_name -->
+                <h1 class="full_name">Mechislav Yastremskyi</h1>
+
+                <p class="description">Self-driven Python Developer with ten month of experience in creating diﬀerent projects. Constantly
+                improving my software skills by working on challenging tasks. Known for fast problem-solving skills
+                and high work ethic while bringing the best value.</p>
+
+            </div> 
+            <!----my_projects-->
+            <div class="my_projects">
+                <h3 class=".main_content_title">Projects</h3>
+                <ol class="my_projects_list">
+                    <li class="my_projects_item">
+                        <span class="my_projects_text">
+                            <a href="https://www.kaggle.com/mechislavyastremskiy/notebook089e6b0060" class="my_projects_link">https://www.kaggle.com/mechislavyastremskiy/notebook089e6b0060</a>
+                            ................
+                            <span class="my_projects_bracket">[</span>Python<span class="my_projects_bracket">]</span>
+                        </span>    
+                    </li>
+                </ol>
+                
+            </div>
+            <!----my_work_experience-->
+            <div class="my_work_experience">
+                <h3 class=".main_content_title">Work Experience</h3>
+                <!----company3-->
+                <div class="my_work_experience_cpn3">
+                    <h4 class="my_work_experience_position">Python Engineer,<span class="my_work_experience_company"> machine learning and deep learning</span></h4>
+                    <p class="my_work_experience_time">August 2021 - up to now <span class="my_work_experience_divider">|</span> Country</p>
+                    <ul class="my_work_experience_duties">
+                        <li class="my_work_experience_dutie_item">Have experience with Kaagle</li>
+                        <li class="my_work_experience_dutie_item">Have experience with Django</li>
+                        <li class="my_work_experience_dutie_item">Developed Flask application</li>
+                        <li class="my_work_experience_dutie_item">Wrote the Scrub</li>
+                        <li class="my_work_experience_dutie_item">Have experience with Docker</li>
+
+                    </ul>
+                </div>
+                
+                <!----company2-->
+                <div class="my_work_experience_cpn2">
+                    <h4 class="my_work_experience_position">Entrepreneur <span class="my_work_experience_company">Freelance </span></h4>
+                    <p class="my_work_experience_time">October 2018 - up to now <span class="my_work_experience_divider">|</span> Country</p>
+                    <ul class="my_work_experience_duties">
+                        <li class="my_work_experience_dutie_item">Director of stone processing production.</li>
+                    </ul>
+                </div>
+
+                <!----company1-->
+                 <!---<div class="my_work_experience_cpn1">
+                    <h4 class="my_work_experience_position">Manager <span class="my_work_experience_company">Roga & Kopyta New</span></h4>
+                    <p class="my_work_experience_time">August 2021 - up to now <span class="my_work_experience_divider">|</span> Country</p>
+                    <ul class="my_work_experience_duties">
+                        <li class="my_work_experience_dutie_item">None</li>
+                        <li class="my_work_experience_dutie_item">None</li>
+                        <li class="my_work_experience_dutie_item">None</li>
+                    </ul>
+                </div> -->    
+            </div>
+
+            <!----education-->
+            <div class="my_education">
+                <h3 class=".main_content_title">Education</h3>               
+                <p class="my_education_name">National Aviation University</p>
+                <p class="my_education_direction">Radioelectronics</p>
+                <p class="my_education_time">Septemer 2007 - March 2013 <span class="my_education_divider">|</span> Country</p>
+            </div>
+
+            <!--estimation-->
+            <div class="lastSection">
+                <h3 class="canvName">Thank you, {{datas.fname}} <span class="canvEstimation">(very much)</span></h3>
+                <div class="buttonCare" id="buttonCare">
+                    
+                    <a class="answer" id="answer"></a>
+                    {% block body %}
+                    {% if message %}
+                        <p class="message">{{message | safe}}</p>       
+                        {% include forms.html %}
+                    {% endif %}
+        
+                    {% if datas %}
+                        <p class="message"> {{ datas.fname }} give me estimate {{ datas.estim }}</p>
+                    {% endif %}
+                    {% endblock %}
+                </div>    
+            </div>    
+        </div> 
+
+        <!---side_bar-->  
+        <aside class="side_bar" id="sidebar">
+            <div class="img1" id="img1">
+                <!---img src="background-image: url({{ url_for('static', filename='img/1_-Cover-Python-corso-base---istruzioni-per-l-uso---square.jpg') }})" alt=python width="370" height="380"-->
+                <!---<div class="block" img src="background-image: url{{ url_for('static', filename='img/MyPhoto.jpg') }}" alt=myphoto width="370" height="380">-->
+            </div>
+            <!---contacts-->
+            <div class="contacts">
+                <h3 class="side_bar_title">Contacts</h3> 
+                <div>
+                    <span class="contact_type">C:</span>
+                     <a class="contact_link" href="tel:+380660535356">+380660535356</a>
+                </div>
+                <div>
+                    <span class="contact_type">E:</span>
+                    <a class="contact_link" href="mailto:ysatrianim@gmail.com">ysatrianim@gmail.com</a>
+                </div> 
+            </div>
+            
+            <!----tech_skills-->
+            <div class="tech_skills">
+                <h3 class="side_bar_title">Tech Skills</h3>
+                <ul class="tech_skills_list" >
+                    <li class="tech_skills_item"><span class="tech_skills_text">Python</span></li>
+                    <li class="tech_skills_item"><span class="tech_skills_text">TensorFlow</span></li>
+                    <li class="tech_skills_item"><span class="tech_skills_text">Keras</span></li>
+                    <li class="tech_skills_item"><span class="tech_skills_text">Flask</span></li> 
+                    <li class="tech_skills_item"><span class="tech_skills_text">Django</span></li>
+                </ul>
+            </div>
+            <!---soft_skills-->
+            <div class="soft_skills">
+                <h3 class="side_bar_title">Soft Skills</h3>
+                <ul class="soft_skills_list">
+                    <li class="soft_skills_item"><span class="soft_skills_text">Desire to learn</span></li>
+                    <li class="soft_skills_item"><span class="soft_skills_text">Aglie</span></li>
+                    <li class="soft_skills_item"><span class="soft_skills_text">Flexibility</span></li>
+                    <li class="soft_skills_item"><span class="soft_skills_text">Teamwork</span></li>
+                </ul>
+            </div>
+            
+        </aside>
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script async src="{{ url_for('static', filename='vuesx.js')}}" defer> </script>
+            
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="{{ url_for('static', filename='img_distruckt.js' )}}" defer> </script>
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,486 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f7fa;
+}
+
+.main_container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    background-color: white;
+    margin: 40px auto; 
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* main_containte */
+.right_bar{
+    padding: 100px 90px;
+}
+
+.main_content_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.abut_me_section{
+    margin-bottom: 40px;
+}
+
+.about_my_profession{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.full_name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.description{
+    width: 400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+/* my_projects */
+
+.my_projects{
+    margin-bottom: 50px;
+}
+
+.my_projects_list{
+    padding: 0 0 0 18px;    
+}
+
+.my_projects_item{
+    color: black;
+    font-weight: bold;
+}
+
+.my_projects_link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.my_projects_text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 5px;
+    color: #595959;
+}
+
+.my_projects_bracket{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+
+}
+
+/* my_work_experience */
+
+
+.my_work_experience_position{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 10px;   
+}
+
+.my_work_experience_time{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+}    
+
+.my_work_experience_divider{
+    color: black;
+}
+
+.my_work_experience_duties{
+    padding-left: 18px;
+}
+
+.my_work_experience_dutie_item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.my_work_experience_cpn3{
+    margin: 0 15px 0 0;
+}
+
+.my_work_experience_cpn1{ 
+     margin-bottom: 40px; 
+}  
+
+.my_work_experience_company{
+    color: #FB6D3A;
+}
+
+.my_education_name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
+    margin-bottom: 10px;
+}
+
+.my_education_direction{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.my_education_time{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+}
+
+.my_education_divider{
+    color: black;
+}
+
+/* side_bar */
+.side_bar{
+    background-color: #1E2939;
+    width: 370px;
+    padding: 40px 0;
+    transition: 0.2s background-color ease;
+}
+
+.img1{
+    background-image: url(img/MyPhoto.jpg);
+    background-size: cover;
+    width: 370px;
+    height: 380px;
+    transform-style: preserve-3d;
+}
+
+.img1 .block{
+    position: relative;
+    /*height: 5vw;
+    width: 5vw; */
+    background-image: url(img/Fon.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transform-style: preserve-3d;
+}
+
+.contacts,
+.tech_skills,
+.soft_skills{
+    margin: 50px 0 0 40px;
+}
+
+.side_bar_title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;  
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* contacts_section */
+
+.contact_type{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;  
+    color: white;
+    margin-right: 7px;
+}
+
+.contact_link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px; 
+    color: #565E6A;
+    transition-property: color, font-size,  ; 
+    transition-duration: .6s;
+}
+
+.contact_link:hover {
+    font-size: 16px;
+    color: black;
+}
+
+/* skills_list_sections */
+
+.tech_skills_list,
+.soft_skills_list{
+    padding-left: 17px;
+}
+
+.soft_skills_item,
+.tech_skills_item{
+    color: #FB6D3A;
+}
+
+/* skills_sections_with_text */
+
+.tech_skills_text,
+.soft_skills_text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px; 
+    color: white;
+    
+} 
+
+.lastSection{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.canvEstimation{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+}
+
+.myCanvas{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.clear{
+    background-color: rgb(223, 6, 6);
+    position: relative;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.clear:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 2s
+}
+
+.clear:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.predict {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.predict:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 4s
+}
+
+.predict:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.answer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FB6D3A;
+    margin-bottom: 5px;
+}
+
+.predictYes {
+    position: relative;
+    background-color: #2d612f;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.predictYes:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 4s
+}
+
+.predictYes:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.clearNo {
+    background-color: rgb(148, 48, 48);
+    position: relative;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.clearNo:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 2s
+}
+
+.clearNo:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.form1 {
+    padding: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #565E6A;
+    margin-bottom: 10px;
+}
+
+.fname {
+    margin-bottom: 10px;
+}
+
+.form2 {
+    padding: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #565E6A;
+}
+
+.lname {
+    padding-right: 10px;
+}
+
+.ratingbtn {
+    position: sticky bottom;
+    background-color: #FB6D3A;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    overflow: hidden;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+version: '3.8.8'
+
+services:
+  flask_web: 
+    container_name: flask_web_buildd
+    build: ./
+    ports:
+      - 807:80
+    depends_on:
+      - db  
+    restart: unless-stopped
+
+  postgres:
+    env_file: ./docker/.env-postgresql
+    container_name: postgres_flask_container
+    image: postgres:13
+    volumes:
+      - flaskdb:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+    networks:
+      - backend    
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4    
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-postgres}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-21071987}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+    ports:
+      - "${PGADMIN_PORT:-5432}:5432"
+    restart: unless-stopped
+    networks:
+      - backend   
+
+volumes:
+  flaskdb: 
+    driver: local
+  pgadmin: 
+    driver: local
+
+networks:
+  backend: 
+    driver: bridge   

@@ -1,0 +1,8 @@
+.vscode
+__pycashe__
+.mypy_cache
+input
+migrations
+predict
+Reload
+python-getting-started
