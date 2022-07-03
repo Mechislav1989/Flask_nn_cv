@@ -126,7 +126,7 @@ def submit() -> str:
     
     fname = request.form['fname']
     lname = request.form['lname']
-    estim = response
+    estim = request.form['data']
     print(fname, lname, estim)
     try:
         datas = User(fname, lname, estim)
