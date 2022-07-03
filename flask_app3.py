@@ -21,7 +21,7 @@ ENV = 'dev'
 if ENV == 'loc':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:21071987@127.0.0.1:5432/estimate'
 elif ENV == 'dev':
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://qscsxfigbwhajk:66d4ca6be7f1060eeed7005770c7f7aaffcb7957c88a9eb8ddac3692f3d7b395@ec2-23-23-151-191.compute-1.amazonaws.com:5432/d1ds9hsal9udrg'   
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://qscsxfigbwhajk:66d4ca6be7f1060eeed7005770c7f7aaffcb7957c88a9eb8ddac3692f3d7b395@ec2-23-23-151-191.compute-1.amazonaws.com:5432/d1ds9hsal9udrg'   
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'super secret key'
 db = SQLAlchemy(app)
