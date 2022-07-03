@@ -67,7 +67,7 @@ def predict() -> str:
     return response
 
 def _model_structure_from_json() -> str:
-    json_file = r'C:\Users\ysatr\OneDrive\Рабочий стол\MMNIST\model_numMy.json'
+    json_file = r'\model_numMy.json'
     with open(json_file) as json_file:
         model_json = json_file.read()
     
@@ -75,7 +75,7 @@ def _model_structure_from_json() -> str:
 
 def _model_load(model_json: str):
     loaded_model = tf.keras.models.model_from_json(model_json)
-    weights_file = r'C:\Users\ysatr\OneDrive\Рабочий стол\MMNIST\modelMy.h5'
+    weights_file = r'\modelMy.h5'
     loaded_model.load_weights(weights_file)
     return loaded_model
 
