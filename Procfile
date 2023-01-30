@@ -1,2 +1,1 @@
-
-worker: python flask_app3 
+web: gunicorn flask_app3: app
