@@ -1,2 +1,2 @@
 web: gunicorn 
-wsgi: flask_app3 
+worker: python flask_app3 
